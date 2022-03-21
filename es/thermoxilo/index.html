@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThermoNox</title>
+  <link rel="stylesheet" href="../../styles/index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+  <script src="../../js/index.js" defer></script>
+</head>
+<body>
+  <header class="header_container">
+    <div class="language_container">
+      <div class="language_menu">
+        <div class="language_menu__select">
+          <div class="language_icon">
+            <i class="bi-globe globe-icon"></i>
+          </div>
+          <div class="selected_language"><p>Español&nbsp;</p><i class="bi-chevron-down"></i></div>
+        </div>
+        <ul class="language_menu__dropdown">
+          <li class="language_menu__option"><a href="/de/">Deutsch</a></li>
+          <li class="language_menu__option"><a href="/en/">English</a></li>
+          <li class="language_menu__option"><a href="/es/">Español</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header">
+      <i class="bi-list menu-icon" id="menu-icon"></i>
+      <a class="header__logo_container" href="/es/">
+        <img class="header__logo" src="../../assets/images/thermonox-neu-logo-xl.png" alt="ThermoNox Logo">
+      </a>
+      <ul class="navbar">
+        <li class="navbar__item"><a href="/es/">INICIO</a></li>
+        <li class="navbar__item">
+          <a href="/es/thermonox/">THERMONOX®</a>
+          <ul class="navbar__dropdown">
+            <li class="dropdown__option"><a href="">Funcionamiento</a></li>
+            <li class="dropdown__option"><a href="">Aplicaciones</a></li>
+            <li class="dropdown__option"><a href="">Seguridad</a></li>
+          </ul>
+        </li>
+        <li class="navbar__item navbar__item--selected">
+          <a href="/es/thermoxilo/">THERMOXILO</a>
+          <ul class="navbar__dropdown">
+            <li class="dropdown__option"><a href="">Acerca de Themoxilo</a></li>
+            <li class="dropdown__option"><a href="">Aplicaciones</a></li>
+            <li class="dropdown__option"><a href="">Seguridad</a></li>
+          </ul>
+        </li>
+        <li class="navbar__item"><a href="/es/contacto/">CONTACTO</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="main">THERMOXILO</div>
+  <div class="offcanvas">
+    <ul class="offcanvas_language">
+      <li class="offcanvas_language__item"><a href="/de/">DE</a></li>
+      <li class="offcanvas_language__item">|</li>
+      <li class="offcanvas_language__item"><a href="/en/">EN</a></li>
+      <li class="offcanvas_language__item">|</li>
+      <li class="offcanvas_language__item"><a href="/es/">ES</a></li>
+    </ul>
+    <ul class="offcanvas_nav">
+      <li class="offcanvas_nav__item"><a href="/es/">Inicio</a></li>
+      <li class="offcanvas_nav__item">
+        <a href="/es/thermonox/">Thermonox®</a>
+        <ul class="offcanvas_subnav">
+          <li class="offcanvas_subnav__item"><a href="">Funcionamiento</a></li>
+          <li class="offcanvas_subnav__item"><a href="">Aplicaciones</a></li>
+          <li class="offcanvas_subnav__item"><a href="">Seguridad</a></li>
+        </ul>
+      </li>
+      <li class="offcanvas_nav__item offcanvas_nav__item--selected">
+        <a href="/es/thermoxilo/">Thermoxilo</a>
+        <ul class="offcanvas_subnav">
+          <li class="offcanvas_subnav__item"><a href="">Acerca de Themoxilo</a></li>
+          <li class="offcanvas_subnav__item"><a href="">Aplicaciones</a></li>
+          <li class="offcanvas_subnav__item"><a href="">Seguridad</a></li>
+        </ul>
+      </li>
+      <li class="offcanvas_nav__item"><a href="/es/contacto/">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="cover" id="cover"></div>
+</body>
+</html>
