@@ -1,14 +1,6 @@
 @import './fonts.css';
 @import './icons.css';
-
-:root{
-    --orange: rgb(235, 91, 37);
-    --yellow: rgb(250, 185, 0);
-    --brown: rgb(91, 59, 52);    
-    --grey: rgb(68, 68, 68);
-    --light-background: rgb(245, 245, 245);
-    --dropdown-background: rgb(238, 238, 238);
-}
+@import './root.css';
 
 *{
     padding: 0;
@@ -25,8 +17,6 @@ body{
     font-family: 'Montserrat';
     height: 100%;
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
     transition: transform 0.5s ease;
 }
@@ -41,7 +31,7 @@ ul{
 }
 
 .header_container{
-    background-color: rgb(235, 91, 37);
+    background-color: var(--orange);
     padding: 0 25px;
     position: relative;
 }
@@ -58,19 +48,19 @@ ul{
     height: calc(30% + 5px);
 }
 
-.main{
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 100%;
 }
 
 .menu-icon{
@@ -202,6 +192,20 @@ ul{
     .language_container{
         display: flex;
         justify-content: flex-end;
+    }
+
+    .contact{
+        display: flex;
+        gap: 1rem;
+        font-size: 18px;
+        align-items: center;
+        justify-self: center;
+        padding: 0 2rem;
+    }
+
+    .contact__item{
+        color: white;
+        text-decoration: none;
     }
 
     .language_menu{
